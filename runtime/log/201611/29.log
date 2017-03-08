@@ -1,0 +1,246 @@
+[ 2016-11-29T15:31:13+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] 127.0.0.1/ [运行时间：8.884509s][吞吐率：0.11req/s] [内存消耗：1,268.09kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; BIDUBrowser 8.4)',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'userid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-29T15:31:14+08:00 ] 127.0.0.1 127.0.0.1 GET /favicon.ico
+[ log ] 127.0.0.1/favicon.ico [运行时间：2.409138s][吞吐率：0.42req/s] [内存消耗：963.15kb] [文件加载：27]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; BIDUBrowser 8.4)',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-29T15:31:30+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] 127.0.0.1/ [运行时间：0.148008s][吞吐率：6.76req/s] [内存消耗：1,268.52kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 BIDUBrowser/8.4 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'dnt' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'userid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-29T15:31:32+08:00 ] 127.0.0.1 127.0.0.1 GET /favicon.ico
+[ log ] 127.0.0.1/favicon.ico [运行时间：0.326019s][吞吐率：3.07req/s] [内存消耗：963.36kb] [文件加载：27]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7v0ub8picgh2tf3gc1eep2am83',
+  'dnt' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-11-29T15:31:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/counts.html
+[ log ] 127.0.0.1/index/index/counts.html [运行时间：4.746272s][吞吐率：0.21req/s] [内存消耗：2,550.30kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'counts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 BIDUBrowser/8.4 Safari/537.36',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7v0ub8picgh2tf3gc1eep2am83',
+  'dnt' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->counts[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_class` [ RunTime:1.420081s ]
+[ sql ] [ SQL ] SELECT `tname` FROM `s_class` [ RunTime:0.027001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1012` [ RunTime:0.078005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1012` LIMIT 1 [ RunTime:0.216012s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1013` [ RunTime:0.150008s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1013` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1014` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1014` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1015` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1015` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1016` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1016` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1001` [ RunTime:0.190011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1001` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1002` [ RunTime:0.186011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1002` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1003` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1003` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1004` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1004` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1005` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1005` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1006` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1006` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1007` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1007` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1008` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1008` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1009` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1009` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1010` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1010` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1011` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1011` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1017` [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1017` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1018` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1018` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1019` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1019` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1020` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1020` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1021` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1021` LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

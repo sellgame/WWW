@@ -1,0 +1,102 @@
+{include file="public/header" /}
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="{$Think.config.img_path}no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript>
+
+<body>
+    {include file="Public/sidebar" /}
+    <div class="am-g" style="margin: 20px 0;">
+        <div class="am-u-lg-8">
+            <div id="tip"></div>
+            <article class="am-article" id="article">
+                <div class="am-article-hd">
+                    <h1 class="am-article-title">{$data.mtitle}</h1>
+                    <notempty name="data.stitle">
+                        <blockquote>
+                            <p>副标题：{$data.stitle}</p>
+                        </blockquote>
+                    </notempty>
+                    <p class="am-article-meta">出版时间：
+                        <notempty name="data.year">{$data.year} 年</notempty>
+                        <notempty name="data.vol">{$data.vol} 卷</notempty>
+                        <notempty name="data.issue">{$data.issue} 期</notempty>
+                    </p>
+                    <p class="am-article-meta">个人著者：{$data.authors}</p>
+                    <p class="am-article-meta">个人著者单位：{$data.authorunit}</p>
+                    <notempty name="data.corporateauthor">
+                        <p class="am-article-meta">团体著者：{$data.corporateauthor}</p>
+                    </notempty>
+                </div>
+                <div class="am-article-bd">
+                    <h1 class="am-article-lead">文档摘要：<br/>{$data.abstracts}</h1>
+                    <notempty name="data.filepath">
+                        <blockquote>
+                            <p>查看全文：<a href="javascript:void(0)" onclick="downs('{$data.docid}','{$Think.config.downpath}{$data.filepath}');">{$data.filename}</a>&nbsp;&nbsp;( {$data.filesize} ) &nbsp;&nbsp;<a data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 200, height: 200}">移动下载</a></p>
+                        </blockquote>
+                    </notempty>
+                    <hr class="am-article-divider" />
+                    <p class="am-article-meta">主题词：{$data.keyword}</p>
+                    <p class="am-article-meta">自由词：{$data.freeword}</p>
+                    <p class="am-article-meta">注释：{$data.notes}</p>
+                    <p class="am-article-meta">DOI号：{$data.doi}</p>
+                    <hr class="am-article-divider" />
+                    <p class="am-article-meta">母体文献(主)：{$data.sourcename}</p>
+                    <notempty name="data.sourcename_a">
+                        <p class="am-article-meta">母体文献(副)：{$data.sourcename_a}</p>
+                    </notempty>
+                    <notempty name="data.pubdate">
+                        <p class="am-article-meta">出版时间：{$data.pubdate}</p>
+                    </notempty>
+                    <notempty name="data.pubaddress">
+                        <p class="am-article-meta">出版商：{$data.pubaddress}</p>
+                    </notempty>
+                    <notempty name="data.confaddress">
+                        <p class="am-article-meta">会议地点：{$data.confaddress}</p>
+                    </notempty>
+                    <notempty name="data.confdate">
+                        <p class="am-article-meta">会议时间：{$data.confdate}</p>
+                    </notempty>
+                    <hr class="am-article-divider" />
+                    <p class="am-article-meta">其他信息1：{$data.temp01}</p>
+                    <p class="am-article-meta">其他信息2：{$data.temp02}</p>
+                    <p class="am-article-meta">其他信息3：{$data.temp03}</p>
+                    <p class="am-article-meta">其他信息4：{$data.temp04}</p>
+                    <p class="am-article-meta">其他信息5：{$data.temp05}</p>
+                    <p class="am-article-meta">其他信息6：{$data.temp06}</p>
+                    <p class="am-article-meta">其他信息7：{$data.temp07}</p>
+                    <p class="am-article-meta">其他信息8：{$data.temp08}</p>
+                    <p class="am-article-meta">其他信息9：{$data.temp09}</p>
+                </div>
+            </article>
+        </div>
+        <div class="am-u-lg-4"> </div>
+    </div>
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">微信扫描二维码
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                <img src="{:url('qrcode',['text'=>$text])}">
+            </div>
+        </div>
+    </div>
+    {include file="Public/footer" /}
+    <script>
+    <!--
+    function downs(docid, filepath) {
+        $.post("{:URL('record/adowns')}", {
+            did: docid
+        }, function(data, status) {
+            if (data == 'success') parent.window.location = filepath;
+        });
+    }
+    //-->
+    </script>
+</body>
+
+</html>

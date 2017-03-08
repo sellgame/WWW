@@ -1,0 +1,98 @@
+{include file="public/header" /}
+<link href="{$Think.config.css_path}style.css" rel="stylesheet" />
+<style type="text/css">
+.logoimg {
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+}
+</style>
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="{$Think.config.img_path}no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript>
+
+<body>
+    {include file="Public/usidebar" /}
+    <div class="am-container">
+        <div class="am-g" style="margin-top:50px">
+            <table class="am-table am-table-striped am-table-hover">
+                <tbody id="container">
+                </tbody>
+            </table>
+            <input type="hidden" id="cpages">
+            <input type="hidden" id="csid">
+            <div class="am-g" style="margin-top:30px" id="showpage">
+                <ul id="page" class="am-pagination">{$page}</ul>
+            </div>
+        </div>
+    </div>
+    <script id="template01" type="text/x-handlebars-template">
+        {{#each this}}
+        <tr>
+            <td><a class="am-fl" href="{:Url('special_alist')}?id={{id}}" target="_blank">{{sname}}</a></td>
+        </tr>
+        {{/each}}
+    </script>
+    {include file="Public/footer" /}
+    <script src="{$Think.config.js_path}handlebars.min.js"></script>
+    <script src="{$Think.config.js_path}jqPaginator.min.js"></script>
+    <script>
+    <!--
+    $(document).ready(function() {
+        $.AMUI.progress.configure({
+            parent: "#footer"
+        });
+        showpage(1, 1);
+    });
+
+    function postdata(cpages) {
+        $.AMUI.progress.start();
+        $.post('{:Url('special/alist')}', {
+                uid: {$uid},
+                sid: {$sid},
+                cpage: cpages
+            },
+            function(data, status) {
+                if (data != 'false') {
+                    var myTemplate01 = Handlebars.compile($('#template01').html());
+                    $('#container').html(myTemplate01(data.res));
+                    $('#cpages').val(cpages);
+                } else {
+                    $('#container').html('没有检索数据');
+                    data.tpage = 1;
+                }
+                //重置分页属性
+                $('#page').jqPaginator('option', {
+                    totalPages: data.tpage,
+                    currentPage: cpages
+                });
+                $.AMUI.progress.done();
+            });
+    }
+
+
+    //分页显示
+    function showpage(currentPage, totalPages) {
+        $("#page").jqPaginator({
+            totalPages: totalPages,
+            visiblePages: 8,
+            currentPage: currentPage,
+            first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+            prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+            next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+            last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+            page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+            onPageChange: function(cpage) {
+                postdata(cpage);
+            }
+        });
+    }
+    //-->
+    </script>
+</body>
+
+</html>

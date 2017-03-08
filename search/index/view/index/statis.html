@@ -1,0 +1,188 @@
+{include file="public/header" /}
+<style>
+#ylist {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#ylist a {
+    margin-right: 20px;
+}
+</style>
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="{$Think.config.img_path}no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript>
+
+<body>
+    {include file="Public/sidebar" /}
+    <div class="am-g" style="margin-top: 30px">
+        <div class="am-u-lg-3">
+            <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                <h2 class="am-titlebar-title ">统计项目</h2>
+            </div>
+            <div class="am-gp" style="padding:20px 10px">
+                <ul class="am-list">
+                    <li style="border:none">
+                        <a href="#" onclick="get_a()">十五年数据分布图</a>
+                    </li>
+                    <li style="border:none">
+                        <a href="#" onclick="get_b(2016,1)">分库分年数据对比</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="am-u-lg-9">
+            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            <div id="ylist"></div>
+        </div>
+    </div>
+    {include file="Public/footer" /}
+    <script src="{$Think.config.js_path}Highcharts-4.2.3/js/highcharts.js" type="text/javascript"></script>
+    <script src="{$Think.config.js_path}Highcharts-4.2.3/js/modules/exporting.js" type="text/javascript"></script>
+    <script LANGUAGE="JavaScript">
+    function get_a() {
+        $.AMUI.progress.start();
+        $('#ylist').html('');
+        $.get('{:Url('cluster/aaa')}',
+            function(data, status) {
+                if (data != 'null') {
+                    var n = [];
+                    for (var i = 0; i < data.n.length; i++) {
+                        n[i] = Number(data.n[i]);
+                    }
+                    $('#container').highcharts({
+                        credits: {
+                            enabled: false
+                        },
+                        title: {
+                            text: '近十五年文献出版分布图',
+                            x: -20 //center
+                        },
+                        xAxis: {
+                            categories: data.y
+                        },
+                        yAxis: {
+                            title: {
+                                text: '单位：篇'
+                            },
+                            plotLines: [{
+                                value: 0,
+                                width: 1,
+                                color: '#808080'
+                            }]
+                        },
+                        tooltip: {
+                            valueSuffix: '篇'
+                        },
+                        legend: {
+                            layout: 'vertical',
+                            align: 'right',
+                            verticalAlign: 'middle',
+                            borderWidth: 0
+                        },
+                        series: [{
+                            name: '全库',
+                            data: n
+                        }]
+                    });
+                } else {
+                    $('#container').html('没有统计数据');
+                }
+                $.AMUI.progress.done();
+            });
+    }
+
+    function get_b(years, ac) {
+        $.AMUI.progress.start();
+        $.post('{:Url('cluster/bbb')}', {
+                years: years
+            },
+            function(data, status) {
+                if (data != 'null') {
+                    var n = [];
+                    for (var i = 0; i < data.n.length; i++) {
+                        n[i] = [];
+                        n[i][0] = data.c[i];
+                        n[i][1] = Number(data.n[i]);
+                    }
+                    $('#container').highcharts({
+                        credits: {
+                            enabled: false
+                        },
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: years + ' 各来源库数据更新情况图'
+                        },
+                        xAxis: {
+                            type: 'category',
+                            labels: {
+                                rotation: -45,
+                                style: {
+                                    fontSize: '13px',
+                                    fontFamily: 'Verdana, sans-serif'
+                                }
+                            }
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: '单位：篇'
+                            }
+                        },
+                        legend: {
+                            enabled: false
+                        },
+                        tooltip: {
+                            pointFormat: years + '年更新数据: <b>{point.y} 篇</b>'
+                        },
+                        series: [{
+                            name: '更新量',
+                            data: n
+                        }]
+                    });
+
+                } else {
+                    $('#container').html('没有统计数据');
+                }
+                $.AMUI.progress.done();
+            });
+
+        if (ac == 1) {
+            get_c();
+        }
+    }
+
+    function get_c() {
+        $.get('{:Url('cluster/ylist')}',
+            function(data, status) {
+                if (data != 'null') {
+                    var alist = '';
+                    for (var i = 0; i < data.length; i++) {
+                        alist = alist + '<a href="#" onclick="get_b(' + data[i].pyear + ',0)">' + data[i].pyear + '</a> ';
+                        if ((i + 1) % 10 == 0) {
+                            alist = alist + '<br>';
+                        }
+                    }
+                    $('#ylist').html(alist);
+                } else {
+                    $('#ylist').html('没有年份数据');
+                }
+            });
+    }
+
+    $(document).ready(function() {
+        $.AMUI.progress.configure({
+            parent: '#footer'
+        });
+        get_a();
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+{include file="public/header" /}
+<style type="text/css">
+#artgroup {
+    padding: 15px 5px;
+    word-break: break-all;
+}
+
+#artgroup a {
+    font-size: 18px;
+    height: 40px;
+    line-height: 50px;
+    padding-right: 10px;
+}
+
+#artgroup a:hover {
+    color: #F00;
+    text-decoration: underline;
+}
+
+#artgroup .tags0 {
+    color: #1b961b;
+    font-size: 26px;
+}
+
+#artgroup .tags1 {
+    color: #0b6fa2;
+    font-size: 24px
+}
+
+#artgroup .tags2 {
+    color: #a4241f;
+    font-size: 22px;
+}
+
+#artgroup .tags3 {
+    color: #c10802;
+    font-size: 20px
+}
+
+#artgroup .tags4 {
+    color: #ffbe40;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#artgroup .tags5 {
+    color: darksalmon;
+    font-size: 16px
+}
+
+#artgroup .tags6 {
+    color: darkorchid;
+    font-size: 14px
+}
+
+#artgroup .tags7 {
+    color: #0c7cb5;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#artgroup .tags8 {
+    color: #eda4a2;
+    font-size: 16px
+}
+
+#artgroup .tags9 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#grouplist a {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#grouplist a:hover {
+    color: #F00;
+    text-decoration: underline;
+}
+
+.huanle {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    /*徽标位置*/
+}
+</style>
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="{$Think.config.img_path}no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript>
+
+<body>
+    {include file="Public/sidebar" /}
+    <div class="am-g" style="margin: 20px 0;">
+        <form class="am-form-inline" role="form">
+            <div class="am-form-group">
+                <span style="margin-left:10px; margin-right:20px"><img src="{$Think.config.img_path}logo-bar.png"></span>
+            </div>
+            <div class="am-form-group">
+                <input type="text" class="am-form-field am-form-success" style="width:400px" id="keys" value="{$keys}" placeholder="请输入关键词">
+                <input type="hidden" id="okeys" value="{$keys}">
+                <input type="hidden" id="year" value="{$year}">
+            </div>
+            <div class="am-form-group">
+                <button type="button" class="am-btn am-btn-success" onclick="search()">搜一下</button>
+            </div>
+        </form>
+    </div>
+    <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+    <div class="am-g">
+        <div class="am-u-lg-8">
+            <div id="tip">相关匹配文献 <span id="counts"></span> 篇 (<span class="am-kai" id="setime">本次搜索用时 0s</span>)</div>
+            <section data-am-widget="accordion" id="alist" class="am-accordion am-accordion-basic" data-am-accordion='{  }'>
+            </section>
+            <div style="margin-top:30px" id="showpage">
+                <ul id="page" class="am-pagination">{$page}</ul>
+            </div>
+        </div>
+        <div class="am-u-lg-3 am-u-lg-offset-1" id="year">
+            <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                <h2 class="am-titlebar-title ">分组浏览</h2>
+            </div>
+            <div class="am-gp" id="artgroup"></div>
+        </div>
+    </div>
+    <div id="yvilist">
+    </div>
+    <script id="entry-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <dl class="am-accordion-item">
+            <dt class="am-accordion-title am-text-truncate">{{mtitle}}</dt>
+            <dd class="am-accordion-bd am-collapse ">
+                <div class="am-accordion-content">
+                    并列题名：{{stitle}}
+                    <br/> 个人著者：{{authors}}
+                    <br/> 个人著者单位：{{authorunit}}
+                    <br/>
+                    <a href="{:Url('Index/article')}?aid={{docid}}" target="_blank">[查看文档详细信息]</a>
+                    <br/>
+                </div>
+            </dd>
+        </dl>
+        {{/each}}
+    </script>
+    {include file="Public/footer" /}
+    <script src="{$Think.config.js_path}handlebars.min.js"></script>
+    <script src="{$Think.config.js_path}jqPaginator.min.js"></script>
+    <script>
+    <!--
+    $(document).ready(function() {
+        $.AMUI.progress.configure({
+            parent: "#footer"
+        });
+        showpage(1, 1);
+    });
+
+    function searchs(cpage) {
+        $.AMUI.progress.start();
+        $.post("{:Url('search/index')}", {
+            keys: $('#okeys').val(),
+            year: $('#year').val(),
+            cpage: cpage
+        }, function(data, status) {
+            if (status == 'success') {
+                var myTemplate = Handlebars.compile($('#entry-template').html());
+                $('#alist').html(myTemplate(data.res));
+                $('#setime').html("本次搜索用时" + data.times);
+                $('#counts').html(data.counts);
+                if ($('#year').val() == '' && cpage == 1) {
+                    group(data.group);
+                }
+                //重新初始化折叠事件
+                $.AMUI.accordion.init();
+                //重置分页属性
+                $('#page').jqPaginator('option', {
+                    totalPages: data.tpage,
+                    currentPage: cpage
+                });
+            }
+            $.AMUI.progress.done();
+        });
+    }
+
+    function group(data) {
+        var x = 9;
+        var y = 0;
+        var artgroup = '';
+        for (i in data) {
+            var rand = parseInt(Math.random() * (x - y + 1) + y);
+            artgroup = artgroup + '<a href="javascript:void(0)" class="tags' + rand + '" title="' + data[i] + '篇" onclick="ysearch(' + i + ')">' + i + '</a>';
+        }
+        $('#artgroup').html(artgroup);
+    }
+
+    function ysearch(year) {
+        $('#year').val(year);
+        searchs(1);
+    }
+
+    function search() {
+        $('#okeys').val($('#keys').val());
+        $('#year').val('');
+        searchs(1);
+    }
+
+    //分页显示
+    function showpage(currentPage, totalPages) {
+        $("#page").jqPaginator({
+            totalPages: totalPages,
+            visiblePages: 8,
+            currentPage: currentPage,
+            first: '<li class="first"><a href="javascript:void(0);">首页<\/a><\/li>',
+            prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i>上一页<\/a><\/li>',
+            next: '<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"><\/i><\/a><\/li>',
+            last: '<li class="last"><a href="javascript:void(0);">末页<\/a><\/li>',
+            page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+            onPageChange: function(cpage) {
+                searchs(cpage);
+            }
+        });
+    }
+    //-->
+    </script>
+</body>
+
+</html>

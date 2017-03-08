@@ -1,0 +1,55 @@
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
+    <h1 class="am-topbar-brand">
+		<a href="#" class="am-text-ir">国外军事电子知识库</a>
+	</h1>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse-4'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse-4">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li><a href="{:Url('index/index')}">首页</a></li>
+            <li><a href="{:Url('index/document')}?type=J">期刊文献</a></li>
+            <li><a href="{:Url('index/document')}?type=C">会议文献</a></li>
+            <li><a href="{:Url('index/document')}?type=R">科技报告</a></li>
+            <li><a href="{:Url('index/document')}?type=D">学位论文</a></li>
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">其他分类 <span class="am-icon-caret-down"></span></a>
+                <ul class="am-dropdown-content">
+                    <li><a href="{:Url('index/document')}?type=G">汇编文献</a></li>
+                    <li><a href="{:Url('index/document')}?type=S">技术标准</a></li>
+                    <li><a href="{:Url('index/document')}?type=P">专利文献</a></li>
+                    <li><a href="{:Url('index/document')}?type=M">专著文献</a></li>
+                    <li><a href="{:Url('index/document')}?type=K">参考工具</a></li>
+                </ul>
+            </li>
+            <li class="am-dropdown" data-am-dropdown>
+                <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">文摘数据 <span class="am-icon-caret-down"></span></a>
+                <ul class="am-dropdown-content">
+                    <li><a href="{:Url('index/alist')}?cid=12">NTIS</a></li>
+                    <li><a href="{:Url('index/alist')}?cid=13">INSPEC</a></li>
+                    <li><a href="{:Url('index/alist')}?cid=14">EI</a></li>
+                    <li><a href="{:Url('index/alist')}?cid=15">AERO</a></li>
+                    <li><a href="{:Url('index/alist')}?cid=16">电子科技文摘</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="am-topbar-right">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li class="am-dropdown" data-am-dropdown>
+                    {switch name="username"} {case value=""}
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;" id="usercenter">登陆/注册 <span class="am-icon-caret-down"></span></a>
+                    <ul class="am-dropdown-content" id="userlist">
+                        <li><a href="{:Url('usercenter/login/uin')}">用户登陆</a></li>
+                        <li><a href="{:Url('usercenter/login/reg')}">用户注册</a></li>
+                    </ul>
+                    {/case} {default /}
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;" id="usercenter">会员：{$username} <span class="am-icon-caret-down"></span></a>
+                    <ul class="am-dropdown-content" id="userlist">
+                        <li><a href="{:Url('usercenter/index/uinfo')}">个人信息</a></li>
+                        <li><a href="{:Url('usercenter/index/index')}">用户中心</a></li>
+                        <li><a href="{:Url('usercenter/login/uout')}">退出登录</a></li>
+                    </ul>
+                    {/switch}
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

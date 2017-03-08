@@ -1,0 +1,731 @@
+[ 2017-01-07T00:27:13+08:00 ] 127.0.0.1 127.0.0.1 GET /usercenter/index/index.html
+[ log ] 127.0.0.1/usercenter/index/index.html [运行时间：0.690040s][吞吐率：1.45req/s] [内存消耗：1,912.71kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://127.0.0.1/usercenter/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'PHPSESSID=5rbm6pv448bh83q2lo0q185dr6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Index->index[ U:\phpStudy_A\WWW\search\usercenter\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/usercenter\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'daydown',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: monthdown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:114]
+[ error ] [8]未定义变量: yeardown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:115]
+
+---------------------------------------------------------------
+[ 2017-01-07T00:27:15+08:00 ] ::1 ::1 GET /
+[ log ] localhost/ [运行时间：0.103005s][吞吐率：9.71req/s] [内存消耗：1,284.70kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T00:27:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] 127.0.0.1/index.php [运行时间：0.094006s][吞吐率：10.64req/s] [内存消耗：1,285.66kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T00:27:22+08:00 ] 127.0.0.1 127.0.0.1 GET /usercenter/index/index.html
+[ log ] 127.0.0.1/usercenter/index/index.html [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：1,912.99kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'referer' => 'http://127.0.0.1/usercenter/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'PHPSESSID=5rbm6pv448bh83q2lo0q185dr6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Index->index[ U:\phpStudy_A\WWW\search\usercenter\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/usercenter\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'daydown',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: monthdown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:114]
+[ error ] [8]未定义变量: yeardown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:115]
+
+---------------------------------------------------------------
+[ 2017-01-07T12:02:06+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] 127.0.0.1/ [运行时间：1.159066s][吞吐率：0.86req/s] [内存消耗：1,285.81kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T12:02:07+08:00 ] 127.0.0.1 127.0.0.1 GET /favicon.ico
+[ log ] 127.0.0.1/favicon.ico [运行时间：0.213012s][吞吐率：4.69req/s] [内存消耗：966.59kb] [文件加载：27]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T12:02:08+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/counts.html
+[ log ] 127.0.0.1/index/index/counts.html [运行时间：1.535088s][吞吐率：0.65req/s] [内存消耗：2,568.80kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'counts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->counts[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_class` [ RunTime:0.182011s ]
+[ sql ] [ SQL ] SELECT `tname` FROM `s_class` [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1012` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1012` LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1013` [ RunTime:0.075004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1013` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1014` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1014` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1015` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1015` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1016` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1016` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1001` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1001` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1002` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1002` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1003` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1003` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1004` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1004` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1005` [ RunTime:0.065003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1005` LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1006` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1006` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1007` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1007` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1008` [ RunTime:0.061004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1008` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1009` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1009` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1010` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1010` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1011` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1011` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1017` [ RunTime:0.063003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1017` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1018` [ RunTime:0.033001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1018` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1019` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1019` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1020` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1020` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1021` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1021` LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-07T12:13:58+08:00 ] 127.0.0.1 127.0.0.1 GET /usercenter/login/uin.html
+[ log ] 127.0.0.1/usercenter/login/uin.html [运行时间：2.866164s][吞吐率：0.35req/s] [内存消耗：1,279.62kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'login',
+    2 => 'uin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Login->uin[ U:\phpStudy_A\WWW\search\usercenter\controller\Login.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/usercenter\view\login\uin.html [ array (
+  0 => 'userid',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T12:14:04+08:00 ] 127.0.0.1 127.0.0.1 POST /usercenter/login/uin.html
+[ log ] 127.0.0.1/usercenter/login/uin.html [运行时间：0.225013s][吞吐率：4.44req/s] [内存消耗：1,886.66kb] [文件加载：40]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'login',
+    2 => 'uin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/usercenter/login/uin.html',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'eisc@163.com',
+  'pass' => '123456',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Login->uin[ U:\phpStudy_A\WWW\search\usercenter\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T12:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /usercenter/index/index.html
+[ log ] 127.0.0.1/usercenter/index/index.html [运行时间：0.204012s][吞吐率：4.90req/s] [内存消耗：1,912.90kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/usercenter/login/uin.html',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Index->index[ U:\phpStudy_A\WWW\search\usercenter\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/usercenter\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'daydown',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: monthdown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:114]
+[ error ] [8]未定义变量: yeardown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:115]
+
+---------------------------------------------------------------
+[ 2017-01-07T21:24:45+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] 127.0.0.1/ [运行时间：0.527030s][吞吐率：1.90req/s] [内存消耗：1,286.21kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-07T21:24:47+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/counts.html
+[ log ] 127.0.0.1/index/index/counts.html [运行时间：1.815104s][吞吐率：0.55req/s] [内存消耗：2,569.25kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'counts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->counts[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_class` [ RunTime:0.195011s ]
+[ sql ] [ SQL ] SELECT `tname` FROM `s_class` [ RunTime:0.008000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1012` [ RunTime:0.054004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1012` LIMIT 1 [ RunTime:0.020001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1013` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1013` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1014` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1014` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1015` [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1015` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1016` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1016` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1001` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1001` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1002` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1002` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1003` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1003` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1004` [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1004` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1005` [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1005` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1006` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1006` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1007` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1007` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1008` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1008` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1009` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1009` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1010` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1010` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1011` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1011` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1017` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1017` LIMIT 1 [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1018` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1018` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1019` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1019` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1020` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1020` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1021` [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1021` LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-07T21:24:53+08:00 ] 127.0.0.1 127.0.0.1 GET /usercenter/index/index.html
+[ log ] 127.0.0.1/usercenter/index/index.html [运行时间：0.287016s][吞吐率：3.48req/s] [内存消耗：1,912.84kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Index->index[ U:\phpStudy_A\WWW\search\usercenter\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/usercenter\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'daydown',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: monthdown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:114]
+[ error ] [8]未定义变量: yeardown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:115]
+
+---------------------------------------------------------------
+[ 2017-01-07T21:26:23+08:00 ] 127.0.0.1 127.0.0.1 GET /usercenter/index/index.html
+[ log ] 127.0.0.1/usercenter/index/index.html [运行时间：0.098006s][吞吐率：10.20req/s] [内存消耗：1,912.93kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'usercenter',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=9j7c48scf7h65nmgr59oc1jqt4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\usercenter\controller\Index->index[ U:\phpStudy_A\WWW\search\usercenter\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/usercenter\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'daydown',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: monthdown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:114]
+[ error ] [8]未定义变量: yeardown[U:\phpStudy_A\WWW\runtime\temp\3a008796e7c9d43528beb2f6714b911f.php:115]
+
+---------------------------------------------------------------

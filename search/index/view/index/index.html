@@ -1,0 +1,175 @@
+{include file="public/header" /}
+<link href="{$Think.config.css_path}style.css" rel="stylesheet" />
+<style type="text/css">
+.logoimg {
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.searchinput {
+    margin-top: 50px;
+    width: 500px;
+}
+
+.imglist {
+    margin-top: 20px;
+    width: 500px;
+}
+
+#search_auto {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    Margin-top: 1px;
+    border: 1px solid #4783EB;
+    padding: 0px;
+}
+
+#search_auto ul {
+    margin-bottom: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#search_auto li {
+    background: #FFF;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#search_auto li.cls {
+    text-align: right;
+    background: #EFF0EF;
+    padding-right: 5px;
+}
+
+#search_auto li a {
+    display: block;
+    cursor: pointer;
+    color: #666;
+}
+
+#search_auto li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#searchlist {
+    position: absolute;
+    display: none;
+    Margin-top: 1px;
+    padding: 0px;
+}
+</style>
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="{$Think.config.img_path}no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript>
+
+<body>
+    {include file="Public/sidebar" /}
+    <div class="am-container">
+        <div class="logoimg">
+            <img src="{$Think.config.img_path}logo_b.png">
+        </div>
+        <div class="am-center searchinput">
+            <form method="post" action="{:Url('search')}">
+                <div class="am-input-group" id="pm">
+                    <input type="text" name="keys" id="keys" class="am-form-field" placeholder="请输入关键词，尽量不要带特殊标点符号">
+                    <span class="am-input-group-btn">
+                <button class="am-btn am-btn-primary" type="submit">试试手气</button>
+            </span>
+                </div>
+            </form>
+            <div id="search_auto"></div>
+            <div style="margin-top:20px; text-align:center;" id="counts"></div>
+        </div>
+        <div class="am-center imglist">
+            <div class="carousel">
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l012.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="{:Url('statis')}" class="itemtitle" title="数据统计">数据统计</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l015.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="./Web/special.html" class="itemtitle" title="专题列表">专题列表</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l011.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="./Web/hot.html" class="itemtitle" title="热点查看">热点查看</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l014.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="/" class="itemtitle" title="carousel item">栏目待定</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l001.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="/" class="itemtitle" title="carousel item">栏目待定</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l007.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="/" class="itemtitle" title="carousel item">栏目待定</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l002.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="/" class="itemtitle" title="carousel item">栏目待定</a>
+                </div>
+                <div class="item">
+                    <img src="{$Think.config.img_path}l/l009.png" alt="carousel item" />
+                    <div class="item-background background-color"></div>
+                    <a href="/" class="itemtitle" title="carousel item">栏目待定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {include file="Public/footer" /}
+    <script>
+    <!--
+    $(document).ready(function() {
+        $.get('{:Url('counts')}',
+            function(data) {
+                if (data != 'null') $('#counts').html('（知识库当前共有文档 ' + data + ' 篇）');
+            });
+
+        $('#search_auto').css({
+            'width': $('#pm input[name="keys"]').width() + 18
+        });
+        $('#pm input[name="keys"]').keyup(function() {
+            $.post('{:Url('keywords')}', {
+                    'qstr': $(this).val()
+                },
+                function(data) {
+                    var tstr = '';
+                    if (data == 'null' || data == '') {
+                        tstr = '<li>无类似关键词</li>';
+                    } else {
+                        for (var i = 0; i < data.length; i++) {
+                            tstr = tstr + '<li><a href="javascript:void(0)" onclick="visits(\'' + data[i].keyname + '\')">' + data[i].keyname + '</a></li>';
+                        }
+                    }
+                    tstr = '<ul>' + tstr + '<li class="cls"><a href="javascript:void(0)" onclick="$(this).parent().parent().parent().fadeOut(100)">关闭</a></li></ul>';
+                    $('#search_auto').html(tstr).css('display', 'block');
+                });
+        });
+    });
+
+    function visits(str) {
+        $('#keys').val(str);
+        //$('#search_auto').css('display','none');
+    }
+    //-->
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1649 @@
+[ 2016-12-19T21:19:33+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] 127.0.0.1/ [运行时间：1.287073s][吞吐率：0.78req/s] [内存消耗：1,285.51kb] [文件加载：33]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\index.html [ array (
+  0 => 'userid',
+  1 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:33+08:00 ] 127.0.0.1 127.0.0.1 GET /favicon.ico
+[ log ] 127.0.0.1/favicon.ico [运行时间：0.346020s][吞吐率：2.89req/s] [内存消耗：966.59kb] [文件加载：27]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/counts.html
+[ log ] 127.0.0.1/index/index/counts.html [运行时间：1.676096s][吞吐率：0.60req/s] [内存消耗：2,568.43kb] [文件加载：42]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'counts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->counts[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.232014s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_class` [ RunTime:0.305017s ]
+[ sql ] [ SQL ] SELECT `tname` FROM `s_class` [ RunTime:0.010001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1012` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1012` LIMIT 1 [ RunTime:0.009001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1013` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1013` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1014` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1014` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1015` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1015` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1016` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1016` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1001` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1001` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1002` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1002` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1003` [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1003` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1004` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1004` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1005` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1005` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1006` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1006` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1007` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1007` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1008` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1008` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1009` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1009` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1010` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1010` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1011` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1011` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1017` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1017` LIMIT 1 [ RunTime:0.007000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1018` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1018` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1019` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1019` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1020` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1020` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1021` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_data_1021` LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:36+08:00 ] 127.0.0.1 127.0.0.1 POST /index/index/keywords.html
+[ log ] 127.0.0.1/index/index/keywords.html [运行时间：0.164010s][吞吐率：6.10req/s] [内存消耗：1,864.20kb] [文件加载：39]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'keywords',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '6',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'qstr' => 'r',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->keywords[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_keywords` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT `keyname` FROM `s_keywords` WHERE  `keyname` LIKE 'r%' LIMIT 8 [ RunTime:0.034002s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:37+08:00 ] 127.0.0.1 127.0.0.1 POST /index/index/keywords.html
+[ log ] 127.0.0.1/index/index/keywords.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,864.22kb] [文件加载：39]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'keywords',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '7',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'qstr' => 'ra',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->keywords[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_keywords` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `keyname` FROM `s_keywords` WHERE  `keyname` LIKE 'ra%' LIMIT 8 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:37+08:00 ] 127.0.0.1 127.0.0.1 POST /index/index/keywords.html
+[ log ] 127.0.0.1/index/index/keywords.html [运行时间：0.050002s][吞吐率：20.00req/s] [内存消耗：1,864.30kb] [文件加载：39]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'keywords',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '8',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'qstr' => 'rad',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->keywords[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_keywords` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `keyname` FROM `s_keywords` WHERE  `keyname` LIKE 'rad%' LIMIT 8 [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:37+08:00 ] 127.0.0.1 127.0.0.1 POST /index/index/keywords.html
+[ log ] 127.0.0.1/index/index/keywords.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,864.36kb] [文件加载：39]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'keywords',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '10',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'qstr' => 'radar',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->keywords[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_keywords` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `keyname` FROM `s_keywords` WHERE  `keyname` LIKE 'radar%' LIMIT 8 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:37+08:00 ] 127.0.0.1 127.0.0.1 POST /index/index/keywords.html
+[ log ] 127.0.0.1/index/index/keywords.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,864.36kb] [文件加载：39]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'keywords',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '10',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'qstr' => 'radar',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->keywords[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_keywords` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `keyname` FROM `s_keywords` WHERE  `keyname` LIKE 'radar%' LIMIT 8 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:41+08:00 ] 127.0.0.1 127.0.0.1 POST /index/index/search.html
+[ log ] 127.0.0.1/index/index/search.html [运行时间：0.157009s][吞吐率：6.37req/s] [内存消耗：1,335.16kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '22',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 'Radar antijamming',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->search[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\search.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'keys',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: year[U:\phpStudy_A\WWW\runtime\temp\01157063eec09a8e261ae30bb23a6e72.php:100]
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\01157063eec09a8e261ae30bb23a6e72.php:117]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:45+08:00 ] 127.0.0.1 127.0.0.1 POST /index/search/index.html
+[ log ] 127.0.0.1/index/search/index.html [运行时间：3.329191s][吞吐率：0.30req/s] [内存消耗：1,915.96kb] [文件加载：38]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/search.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '36',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 'Radar antijamming',
+  'year' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Search->index[ U:\phpStudy_A\WWW\search\index\controller\Search.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Search.php:74]
+[ error ] [8]未定义数组下标: 1001[U:\phpStudy_A\WWW\search\index\controller\Search.php:74]
+[ error ] [8]未定义数组下标: 1012[U:\phpStudy_A\WWW\search\index\controller\Search.php:74]
+[ error ] [8]未定义数组下标: 1005[U:\phpStudy_A\WWW\search\index\controller\Search.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Search.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1013 WHERE docid IN(10130002896907,10130001117259,10130000810078,10130003120195,10130003316499,10130003742723,10130003810562,10130004189893,10130004202303,10130004489562,10130004685405,10130004840432,10130005457476) UNION ALL SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1001 WHERE docid IN(10010000157540,10010000407529,10010003399611,10010003380696) UNION ALL SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1012 WHERE docid IN(10120000986533,10120000279436) UNION ALL SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1005 WHERE docid IN(10050000190172) [ RunTime:0.916053s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:52+08:00 ] 127.0.0.1 127.0.0.1 POST /index/search/index.html
+[ log ] 127.0.0.1/index/search/index.html [运行时间：1.238071s][吞吐率：0.81req/s] [内存消耗：1,455.29kb] [文件加载：35]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/search.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '40',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 'Radar antijamming',
+  'year' => '2016',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Search->index[ U:\phpStudy_A\WWW\search\index\controller\Search.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Search.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Search.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1001 WHERE docid IN(10010003380696,10010003352676) [ RunTime:0.045003s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/article.html?aid=10010003352676
+[ log ] 127.0.0.1/index/index/article.html?aid=10010003352676 [运行时间：0.202012s][吞吐率：4.95req/s] [内存消耗：2,007.15kb] [文件加载：41]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/search.html',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '10010003352676',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->article[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\article.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'data',
+  3 => 'text',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_data_1001` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_data_1001` LEFT JOIN `s_source` `s_source` ON `s_data_1001`.`sid`=`s_source`.`s_id` WHERE  `docid` = 10010003352676 LIMIT 1 [ RunTime:0.052003s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:19:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/qrcode/text/aHR0cDovLzE3Mi4xNi4xLjEwMjo4OS9JRUxEVkQvMjAxNjAwMi8xNzUxLTg3ODQvNzQxMDkyNS83NDEwOTMyLnBkZg%3D%3D.html
+[ log ] 127.0.0.1/index/index/qrcode/text/aHR0cDovLzE3Mi4xNi4xLjEwMjo4OS9JRUxEVkQvMjAxNjAwMi8xNzUxLTg3ODQvNzQxMDkyNS83NDEwOTMyLnBkZg%3D%3D.html [运行时间：0.231014s][吞吐率：4.33req/s] [内存消耗：1,759.50kb] [文件加载：32]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'qrcode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/article.html?aid=10010003352676',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'text' => 'aHR0cDovLzE3Mi4xNi4xLjEwMjo4OS9JRUxEVkQvMjAxNjAwMi8xNzUxLTg3ODQvNzQxMDkyNS83NDEwOTMyLnBkZg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->qrcode[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/publication.html?type=C
+[ log ] 127.0.0.1/index/index/publication.html?type=C [运行时间：0.131008s][吞吐率：7.63req/s] [内存消耗：1,334.73kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/search.html',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'C',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\publication.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\069af5a380cd0f1bc58897d495625513.php:102]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:05+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/index.html
+[ log ] 127.0.0.1/index/publication/index.html [运行时间：1.149065s][吞吐率：0.87req/s] [内存消耗：1,484.34kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=C',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '32',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'pname' => '',
+  'stype' => 'opt1',
+  'type' => 'C',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->index[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: where_sid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] Select * From s_source Where s_id IN(1,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29) [ RunTime:0.045002s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/publication.html?type=R
+[ log ] 127.0.0.1/index/index/publication.html?type=R [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,334.75kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=C',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'R',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\publication.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\069af5a380cd0f1bc58897d495625513.php:102]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:08+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/index.html
+[ log ] 127.0.0.1/index/publication/index.html [运行时间：1.105063s][吞吐率：0.90req/s] [内存消耗：1,482.52kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=R',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '32',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'pname' => '',
+  'stype' => 'opt1',
+  'type' => 'R',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->index[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: where_sid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] Select * From s_source Where s_id IN(3,32439,32440,32441,32442,32443,32444,32445,32446,32447,32448,32449,32450,32451,32452,32453,32454,32455,32456,32457) [ RunTime:0.040002s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/publication.html?type=D
+[ log ] 127.0.0.1/index/index/publication.html?type=D [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,334.75kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=R',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'D',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\publication.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\069af5a380cd0f1bc58897d495625513.php:102]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:10+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/index.html
+[ log ] 127.0.0.1/index/publication/index.html [运行时间：1.059061s][吞吐率：0.94req/s] [内存消耗：1,467.63kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=D',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '32',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'pname' => '',
+  'stype' => 'opt1',
+  'type' => 'D',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->index[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: where_sid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] Select * From s_source Where s_id IN(6) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/plist.html?sid=6
+[ log ] 127.0.0.1/index/index/plist.html?sid=6 [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：1,334.70kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'plist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=D',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '6',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->plist[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\plist.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'sid',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\233d51a8d7a1f32ca75c07f1fea97922.php:118]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:16+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/plist.html
+[ log ] 127.0.0.1/index/publication/plist.html [运行时间：1.254072s][吞吐率：0.80req/s] [内存消耗：1,948.39kb] [文件加载：38]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'plist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/plist.html?sid=6',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '32',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'sid' => '6',
+  'year' => '',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->plist[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:155]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Publication.php:158]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1018 WHERE docid IN(10180000000001,10180000000002,10180000000003,10180000000004,10180000000005,10180000000006,10180000000007,10180000000008,10180000000009,10180000000010,10180000000011,10180000000012,10180000000013,10180000000014,10180000000015,10180000000016,10180000000017,10180000000018,10180000000019,10180000000020) [ RunTime:0.070004s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/alist.html?cid=13
+[ log ] 127.0.0.1/index/index/alist.html?cid=13 [运行时间：0.167010s][吞吐率：5.99req/s] [内存消耗：1,489.17kb] [文件加载：38]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'alist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=D',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->alist[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\alist.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'cid',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\8155d897c2ce33fa73173f5bf2ae171e.php:118]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:20+08:00 ] 127.0.0.1 127.0.0.1 POST /index/article/index.html
+[ log ] 127.0.0.1/index/article/index.html [运行时间：1.582091s][吞吐率：0.63req/s] [内存消耗：1,439.42kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=13',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '33',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'cid' => '13',
+  'year' => '',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Article->index[ U:\phpStudy_A\WWW\search\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Article.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Article.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1013 WHERE docid IN(10130000000001,10130000000002,10130000000003,10130000000004,10130000000005,10130000000006,10130000000007,10130000000008,10130000000009,10130000000010,10130000000011,10130000000012,10130000000013,10130000000014,10130000000015,10130000000016,10130000000017,10130000000018,10130000000019,10130000000020) [ RunTime:0.039003s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/alist.html?cid=16
+[ log ] 127.0.0.1/index/index/alist.html?cid=16 [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,334.73kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'alist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=13',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '16',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->alist[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\alist.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'cid',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\8155d897c2ce33fa73173f5bf2ae171e.php:118]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:25+08:00 ] 127.0.0.1 127.0.0.1 POST /index/article/index.html
+[ log ] 127.0.0.1/index/article/index.html [运行时间：1.238071s][吞吐率：0.81req/s] [内存消耗：1,438.27kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=16',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '33',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'cid' => '16',
+  'year' => '',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Article->index[ U:\phpStudy_A\WWW\search\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Article.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Article.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1016 WHERE docid IN(10160000000001,10160000000002,10160000000003,10160000000004,10160000000005,10160000000006,10160000000007,10160000000008,10160000000009,10160000000010,10160000000011,10160000000012,10160000000013,10160000000014,10160000000015,10160000000016,10160000000017,10160000000018,10160000000019,10160000000020) [ RunTime:0.136008s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/alist.html?cid=15
+[ log ] 127.0.0.1/index/index/alist.html?cid=15 [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,334.73kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'alist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=16',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '15',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->alist[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\alist.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'cid',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\8155d897c2ce33fa73173f5bf2ae171e.php:118]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:29+08:00 ] 127.0.0.1 127.0.0.1 POST /index/article/index.html
+[ log ] 127.0.0.1/index/article/index.html [运行时间：1.223070s][吞吐率：0.82req/s] [内存消耗：1,438.60kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=15',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '33',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'cid' => '15',
+  'year' => '',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Article->index[ U:\phpStudy_A\WWW\search\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Article.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Article.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1015 WHERE docid IN(10150000000001,10150000000002,10150000000003,10150000000004,10150000000005,10150000000006,10150000000007,10150000000008,10150000000009,10150000000010,10150000000011,10150000000012,10150000000013,10150000000014,10150000000015,10150000000016,10150000000017,10150000000018,10150000000019,10150000000020) [ RunTime:0.077004s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/alist.html?cid=12
+[ log ] 127.0.0.1/index/index/alist.html?cid=12 [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,334.73kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'alist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=15',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '12',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->alist[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\alist.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'cid',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\8155d897c2ce33fa73173f5bf2ae171e.php:118]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:35+08:00 ] 127.0.0.1 127.0.0.1 POST /index/article/index.html
+[ log ] 127.0.0.1/index/article/index.html [运行时间：1.281073s][吞吐率：0.78req/s] [内存消耗：1,439.53kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=12',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '33',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'cid' => '12',
+  'year' => '',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Article->index[ U:\phpStudy_A\WWW\search\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Article.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Article.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1012 WHERE docid IN(10120000000001,10120000000002,10120000000003,10120000000004,10120000000005,10120000000006,10120000000007,10120000000008,10120000000009,10120000000010,10120000000011,10120000000012,10120000000013,10120000000014,10120000000015,10120000000016,10120000000017,10120000000018,10120000000019,10120000000020) [ RunTime:0.069004s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:20:39+08:00 ] 127.0.0.1 127.0.0.1 POST /index/article/index.html
+[ log ] 127.0.0.1/index/article/index.html [运行时间：1.222070s][吞吐率：0.82req/s] [内存消耗：1,431.66kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=12',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '37',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'cid' => '12',
+  'year' => '2013',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Article->index[ U:\phpStudy_A\WWW\search\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Article.php:74]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Article.php:77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1012 WHERE docid IN(10120001384590,10120001450113,10120001628529,10120001694052) [ RunTime:0.158009s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/publication.html?type=J
+[ log ] 127.0.0.1/index/index/publication.html?type=J [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,334.71kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/alist.html?cid=12',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'J',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\publication.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\069af5a380cd0f1bc58897d495625513.php:102]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/publication.html?type=R
+[ log ] 127.0.0.1/index/index/publication.html?type=R [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：1,334.74kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=J',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'R',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\publication.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\069af5a380cd0f1bc58897d495625513.php:102]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:19+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/index.html
+[ log ] 127.0.0.1/index/publication/index.html [运行时间：1.120064s][吞吐率：0.89req/s] [内存消耗：1,483.34kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=J',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '32',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'pname' => '',
+  'stype' => 'opt1',
+  'type' => 'J',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->index[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: where_sid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] Select * From s_source Where s_id IN(2,7197,7198,7199,7200,7201,7202,7203,7204,7205,7206,7207,7208,7209,7210,7211,7212,7213,7214,7215) [ RunTime:0.055003s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:20+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/index.html
+[ log ] 127.0.0.1/index/publication/index.html [运行时间：1.051060s][吞吐率：0.95req/s] [内存消耗：1,482.45kb] [文件加载：34]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=R',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '32',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'pname' => '',
+  'stype' => 'opt1',
+  'type' => 'R',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->index[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: where_sid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:74]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] Select * From s_source Where s_id IN(3,32439,32440,32441,32442,32443,32444,32445,32446,32447,32448,32449,32450,32451,32452,32453,32454,32455,32456,32457) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:24+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/plist.html?sid=32446
+[ log ] 127.0.0.1/index/index/plist.html?sid=32446 [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,334.72kb] [文件加载：36]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'plist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/publication.html?type=R',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '32446',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->plist[ U:\phpStudy_A\WWW\search\index\controller\Index.php ]
+[ info ] [ VIEW ] U:\phpStudy_A\WWW/search/index\view\index\plist.html [ array (
+  0 => 'userid',
+  1 => 'username',
+  2 => 'sid',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[U:\phpStudy_A\WWW\runtime\temp\233d51a8d7a1f32ca75c07f1fea97922.php:118]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:25+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/plist.html
+[ log ] 127.0.0.1/index/publication/plist.html [运行时间：1.231071s][吞吐率：0.81req/s] [内存消耗：1,949.39kb] [文件加载：38]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'plist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/plist.html?sid=32446',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '36',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'sid' => '32446',
+  'year' => '',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->plist[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:155]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Publication.php:158]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1005 WHERE docid IN(10050000000009,10050000000012,10050000000321,10050000000463,10050000001836,10050000002859,10050000002931,10050000002932,10050000003298,10050000003563,10050000004905,10050000004937,10050000006861,10050000007319,10050000008281,10050000008308,10050000009043,10050000009126,10050000009151,10050000009383) [ RunTime:0.143009s ]
+
+---------------------------------------------------------------
+[ 2016-12-19T21:33:29+08:00 ] 127.0.0.1 127.0.0.1 POST /index/publication/plist.html
+[ log ] 127.0.0.1/index/publication/plist.html [运行时间：1.145065s][吞吐率：0.87req/s] [内存消耗：1,490.68kb] [文件加载：35]
+[ info ] [ LANG ] U:\phpStudy_A\WWW\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publication',
+    2 => 'plist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/index/index/plist.html?sid=32446',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '40',
+  'cookie' => 'PHPSESSID=vue88d4tl9ijam94j0brt0d8v2; K3428161652=1; A10010003352676=1; S6=1; S32446=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'keys' => '',
+  'sid' => '32446',
+  'year' => '1995',
+  'issue' => '',
+  'cpage' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Publication->plist[ U:\phpStudy_A\WWW\search\index\controller\Publication.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: docid[U:\phpStudy_A\WWW\search\index\controller\Publication.php:155]
+[ error ] [8]未定义变量: unions[U:\phpStudy_A\WWW\search\index\controller\Publication.php:158]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=eisc_data;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT docid,mtitle,stitle,authors,authorunit FROM s_data_1005 WHERE docid IN(10050000243213,10050000245117) [ RunTime:0.083005s ]
+
+---------------------------------------------------------------

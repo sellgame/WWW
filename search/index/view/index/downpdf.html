@@ -1,0 +1,41 @@
+{include file="public/header" /}
+<div class="am-g" style="margin: 20px 20px;">
+    <p> 本期共有 <span id="counts"></span> 篇，请使用下载软件批量下载</p>
+    <span id="pdflist"></span>
+</div>
+<script id="entry-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <a href="{$Think.config.downpath}{{filepath}}">{{filename}}</a>
+    <br> {{/each}}
+</script>
+{include file="Public/footer" /}
+<script src="{$Think.config.js_path}handlebars.min.js"></script>
+<script>
+<!--
+$(document).ready(function() {
+    $.AMUI.progress.configure({
+        parent: "#footer"
+    });
+    searchs();
+});
+
+function searchs() {
+    $.AMUI.progress.start();
+    $.post("{:Url('publication/downpdf')}", {
+        sid: {$sid},
+        year: {$year},
+        issue: '{$issue}'
+    }, function(data, status) {
+        if (status == 'success') {
+            var myTemplate = Handlebars.compile($('#entry-template').html());
+            $('#pdflist').html(myTemplate(data.res));
+            $('#counts').html(data.counts);
+        }
+        $.AMUI.progress.done();
+    });
+}
+//-->
+</script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<?php
+
+namespace Home\Controller;
+
+use Think\Controller;
+
+class PaypalController extends Controller {
+
+    public function get_token() {
+        $config = C("paypal");
+        $order_no = I("get.order_no");
+
+        if (empty($order_no)) {
+            echo json_encode(array("code" => "order_no_null", "result" => "订单号参数为空"));
+            exit;
+        }
+        $order_info = M("order")->field("unit_name,order_money")->where("order_no = '" . $order_no . "'")->find();
+        if (empty($order_info)) {
+            echo json_encode(array("code" => "order_null", "result" => "订单为空"));
+            exit;
+        }
+        $order_money = $order_info['order_money'];
+        if ($order_money > 0) {
+            
+        } else {
+            echo json_encode(array("code" => "money", "result" => "订单金额有误"));
+            exit;
+        }
+        $currency = get_paypay_currency($order_info['unit_name']);
+        $data = array(
+            'USER' => $config['USER'],
+            'PWD' => $config['PWD'],
+            'SIGNATURE' => $config['SIGNATURE'],
+            'VERSION' => $config['VERSION'],
+            "PAYMENTREQUEST_0_PAYMENTACTION" => "Sale",
+             "L_PAYMENTREQUEST_0_AMT0" => $order_money,
+            "L_PAYMENTREQUEST_0_QTY0" => "1",
+            "PAYMENTREQUEST_0_ITEMAMT" => $order_money,
+            "PAYMENTREQUEST_0_AMT" => $order_money,
+            "PAYMENTREQUEST_0_AMT" => $order_money,
+            "RETURNURL" => "" . C("SITE_URL") . "Paypal/checkout/order_no/" . $order_no . "", 
+            "CANCELURL" => "http://localhost/test/paypal/cancel.php",
+            "METHOD" => "SetExpressCheckout",
+            "NOSHIPPING" => 1,
+//            "L_PAYMENTREQUEST_0_NAME0" => "商品名称1",
+//            "L_PAYMENTREQUEST_0_DESC0" => "商品描述2",
+            "PAYMENTREQUEST_0_CURRENCYCODE" => $currency, //货币符号EUR，美元USD,https://developer.paypal.com/docs/classic/api/merchant/SetExpressCheckout_API_Operation_NVP/
+        );
+
+        $curl_token_arr = curl_post($config['URL_NVP'], $data); //获取token
+
+        if ($curl_token_arr['ACK'] != 'Success') {
+            echo json_encode(array("code" => "token_fail", "result" => "获取token失败"));
+            exit;
+        }
+        $token = $curl_token_arr['TOKEN'];
+        header("Location: https://www.paypal.com/checkoutnow?token=" . $token . "");
+    }
+
+    public function checkout() {
+        $config = C("paypal");
+        $token = $_REQUEST['token'];
+        $PayerID = $_REQUEST['PayerID'];
+
+        $detail = array(
+            'USER' => $config['USER'],
+            'PWD' => $config['PWD'],
+            'SIGNATURE' => $config['SIGNATURE'],
+            'VERSION' => $config['VERSION'],
+            "PAYMENTREQUEST_0_PAYMENTACTION" => "Sale",
+            "TOKEN" => $token,
+            "METHOD" => "GetExpressCheckoutDetails"
+        );
+        $curl_detail = curl_post($config['URL_NVP'], $detail); //获取买家的信息
+
+        $data = array(
+            'USER' => $config['USER'],
+            'PWD' => $config['PWD'],
+            'SIGNATURE' => $config['SIGNATURE'],
+            'VERSION' => $config['VERSION'],
+            "PAYMENTREQUEST_0_PAYMENTACTION" => "Sale",
+            "PAYERID" => $PayerID,
+            "TOKEN" => $token,
+            "PAYMENTREQUEST_0_AMT" => $curl_detail['PAYMENTREQUEST_0_AMT'],
+            "PAYMENTREQUEST_0_CURRENCYCODE" => $curl_detail['PAYMENTREQUEST_0_CURRENCYCODE'],
+            "L_PAYMENTREQUEST_0_NAME0" => "商品名称1",
+            "L_PAYMENTREQUEST_0_DESC0" => "商品描述2",
+            "METHOD" => "DoExpressCheckoutPayment"
+        );
+
+        $curl_token_arr = curl_post($config['URL_NVP'], $data); //获取token
+//        print_r($curl_token_arr);
+
+        if ($curl_token_arr['PAYMENTINFO_0_PAYMENTSTATUS'] != 'Completed') {
+            echo "付款失败";
+            exit;
+        }
+        $order_no = $_REQUEST['order_no'];
+        
+        $data['pay_type'] = $curl_token_arr['PAYMENTINFO_0_PAYMENTTYPE'];
+        $data['state'] = 1;
+        $data['update_time'] = time();
+        $data['trade_no'] = $curl_token_arr['PAYMENTINFO_0_TRANSACTIONID'];
+        M("order")->where("order_no = '" . $order_no . "'")->save($data);
+//        echo M("order")->getLastSql();
+        $order_info = M("order")->field("id,order_money,order_no,unit_name,update_time,trade_no")->where("order_no = '" . $order_no . "'")->find();
+        $this->assign("order_info", $order_info);
+        $this->display();
+    }
+
+}
+
+?>

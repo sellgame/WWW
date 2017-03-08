@@ -1,0 +1,91 @@
+.background-color       {background-color: #0AA!important;}
+
+/**                 *
+  * CAROUSEL STARTS *
+  *                 **/ 
+.carousel{
+	float: left;
+	width: 100%
+	}
+
+.carousel .item{
+	float: left;
+	width: 24.8%;
+	margin: 0 0.2% 0.2% 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel .item img{
+	float: left;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+.carousel .item .item-background{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	-ms-transition: all ease 0.8s;
+	-o-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+
+.carousel .item .itemtitle{
+	position: absolute;
+	display: block;
+	z-index: 3;
+	text-decoration: none;
+	top: 150%;
+	left: 0;
+	font-size: 18px;
+	color: #FFFFFF;
+	line-height: 16px;
+	-webkit-transition: all ease 0.9s;
+	-moz-transition: all ease 0.9s;
+	-ms-transition: all ease 0.9s;
+	-o-transition: all ease 0.9s;
+	transition: all ease 0.9s;
+	opacity: 0;
+	padding: 0px 20px;
+}
+
+.carousel .item:hover img{
+	-moz-transform: scale(2);
+	-webkit-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+	-ms-transform: scale(2);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+	M11=2, M12=-0, M21=0, M22=2);
+	opacity: 0;
+}
+
+.carousel .item:hover .item-background{
+	opacity: 1;
+}
+
+.carousel .item:hover .itemtitle{
+	opacity: 1;
+	top: 40%;
+}
+
+/**                 *
+  * CAROUSEL ENDS   *
+  *                 **/ 
