@@ -234,7 +234,6 @@ class special extends \think\Controller
 	 * @throws 
 	*/
 	public function alist(){
-
 		if(Request::instance()->isAjax()){
 			debug('begin');
 			$arr = input('');
@@ -246,7 +245,6 @@ class special extends \think\Controller
 					$cpage = $arr['cpage'];
 					$cpage = empty($cpage)?1:$cpage;
 					$cpage = $cpage>$bpage?$bpage:$cpage;
-
 					/* 获取信息 */
 					import('sphinxapi', EXTEND_PATH);
 					$search = new \sphinxclient();
@@ -261,28 +259,33 @@ class special extends \think\Controller
 					$search->SetLimits(($cpage-1)*$pagesize, $pagesize); //分页设置
 
 					$qstr = '';
-					$qarr = array();
+					$qissn = array();
+					$qisbn = array();
 					$param = Db::connect('userdb_config')->name('skeyword')->where('sid='.$arr['sid'])->select();
 					foreach ($param as $key => $value) {
-						$parr = getkey($value);
-						$qarr['isbn'] = array_merge($qarr['isbn'],$parr['isbn']);
-						$qarr['issn'] = array_merge($qarr['issn'],$parr['issn']);
-						$qstr = $qstr.implode(' | ',$parr['keys']);
+						$parr = explode(';', $value['keywords']);
+						foreach ($parr as $id => $val) {
+							$strtem = trim($val);
+							if(stripos($strtem, 'ISBN:')===0){
+								array_push($qisbn,ltrim($strtem,'ISBN:'));
+							} elseif(stripos($strtem, 'ISSN:')===0){
+								array_push($qissn,ltrim($strtem,'ISSN:'));
+							} else {
+								$qstr = $qstr.'"'.$strtem.'" | ';
+							}
+						}
 						unset($parr);
 					}
-					/*
-					if(count($qarr['isbn'])>0){
-						$search->SetFilter('isbn', $qarr['isbn']);	
-					}
-					if(count($qarr['isbn'])>0){
-						$search->SetFilter('isbn', $qarr['isbn']);	
-					}
-					*/
-					return $qarr;
+					if(count($qissn)>0) $search->SetFilter('issn', $qissn);
+					if(count($qisbn)>0) $search->SetFilter('isbn', $qisbn);
+					$search->AddQuery($qstr, config('myindex'));
+					//$result = $search->RunQueries();	
+					debug('end');
+					return $search;
 				}
-			}	
+			}
+			debug('end');
 		}
 		return 'false';
-
 	}
 }
